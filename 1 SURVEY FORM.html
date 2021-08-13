@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap"rel="stylesheet" type="text/css">
+<style>
+    body {
+        background: steelblue;
+        font-family: 'Andika New Basic', sans-serif;
+    }
+    #title {
+        font-size: 30px;
+        color: darkred;
+        text-align: center;
+    }
+    #description {
+        font-size: 16px;
+        color: yellow;
+        text-align: center;
+        width: 600px;
+    }
+    #survey-form {
+        background-color: midnightblue;
+        border-radius: 10px;
+        text-align: left;
+        height: 1100px;
+        width: 500px;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: white;
+    } 
+    #name, #email, #number {
+        font-size: 16px;
+        width: 500px;
+    }
+    input {
+        border-radius: 5px;
+        text-align: left;
+        width: auto;
+    }
+    textarea {
+        width: 500px;
+        height: 125px;
+        max-width: 400px;
+        max-height: 250px;
+        min-width: 500px;
+        min-height: 125px;
+        font-family: 'Andika New Basic', sans-serif;
+    } 
+    button {
+        background-color: forestgreen;
+        color: white;
+        width: 500px;
+        height: 40px;
+        font-size: 20px;
+    }   
+    #dropdown {
+        font-size: 16px;
+        width: 200px;
+        border-radius: 5px;
+    }
+    .central {
+        max-width: 600px;
+        margin: auto;
+    }
+</style>
+
+<head>  
+    <meta charset="utf-8">  
+    <h1 id="title"><u>Games Survey Form</u></h1> 
+</head>
+    
+<body>
+<div class="central">
+<p id="description"><b>Welcome to the survey. In this survey, there are questions based around games.</b></p>
+    
+<form id="survey-form">
+<br> 
+<label id="name-label">
+<p id="name">Name: <input type="text" placeholder="Enter your name" required></p>
+</label>
+
+<label id="email-label">
+<p id="email">Email: <input type="email" placeholder="Enter your email" required></p>
+</label>
+
+<label id="number-label">
+<p id="number">Age: <input type="number" min="1" max="100" placeholder="Age" required></p>
+</label>
+    
+<p>What is your favourite genre in games? <select id="dropdown">
+    <option value = "Select an option" selected disabled>Select an option</option>
+    <option value = "Sports">Sports</option>
+    <option value = "Combat">Combat</option>
+    <option value = "Competitive">Competitive</option>
+    <option value = "Puzzle">Puzzle</option>
+    <option value = "Racing">Racing</option>
+</select></p>
+    
+<p id="radio_buttons">How long do you spend playing games each day?</p>
+<label for="radio_buttons">
+    <input id="radio_buttons" type="radio" name="radio_buttons" checked>6+ hours
+</label>
+    <br>
+<label for="radio_buttons">
+    <input id="radio_buttons" type="radio" name="radio_buttons">3-6 hours
+</label>
+    <br>
+<label for="radio_buttons">
+    <input id="radio_buttons" type="radio" name="radio_buttons">0-3 hours
+</label>
+<br>
+    
+<p id="checkboxes">What are your favourite games that you like to play? (Check all that apply)</p>
+<label for="checkboxes">
+    <input id="checkboxes" value="checkboxes" type="checkbox">GTA 5
+</label>
+    <br>
+<label for="checkboxes">
+    <input id="checkboxes" value="checkboxes" type="checkbox">FIFA 21
+</label>
+    <br>
+<label for="checkboxes">
+    <input id="checkboxes" value="checkboxes" type="checkbox">Rocket League
+</label>
+    <br>
+<label for="checkboxes">
+    <input id="checkboxes" value="checkboxes" type="checkbox">Call of Duty
+</label>
+    <br>
+<label for="checkboxes">
+    <input id="checkboxes" value="checkboxes" type="checkbox">Minecraft
+</label>
+    <br>
+<label for="checkboxes">
+    <input id="checkboxes" value="checkboxes" type="checkbox">League of Legends
+</label>
+<br>
+    
+<p>If there are any games or genres that you play that are not mentioned above, please put them in the comment box below.</p>
+<textarea placeholder="Enter your comment(s) here..."></textarea>
+<br>
+    
+<p>If you are happy with all the answers provided, press the submit button. Thank you for completing the survey.</p>
+<button type="submit">SUBMIT</button>
+</form>
+</div>
+</body>
+</html>
