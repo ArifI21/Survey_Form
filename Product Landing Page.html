@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet" type="text/css">
+
+<style>
+    body {
+        font-family: 'Andika New Basic', sans-serif;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #page {
+        position: relative;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        position: fixed;
+    }
+
+    #header-img {
+        height: 160px;
+        width: 200px;
+    }
+
+    ul {
+        list-style: none;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    #nav-bar {
+        width: 150%;
+        font-size: 20px;
+    }
+
+    h1 {
+        padding-bottom: 50px;
+        text-align: center;
+        color: red;
+        font-size: 50px;
+    }
+
+    #email-form {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    textarea {
+        width: 500px;
+        height: 125px;
+        max-width: 400px;
+        max-height: 250px;
+        min-width: 500px;
+        min-height: 125px;
+        text-align: center;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    #my-form {
+        background-color: lightgray;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+
+    .para {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    @media (max-width: 480px) {
+        #page {
+            align-items: center;
+        }
+    }
+</style>
+
+<body>
+    <div id="page">
+        <header id="header">
+            <img id="header-img" src="images/gamereview.jpg" alt="game reviews logo" width="200px" height="auto"> <!-- Image does not show up online, I am not sure how to make it show. This image was from https://www.designcrowd.com/design/2663384 -->
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#text">What Are Game Reviews?</a></li>
+                    <br>
+                    <li><a class="nav-link" href="#the-video">Video On Game Reviews</a></li>
+                    <br>
+                    <li><a class="nav-link" href="#your-turn">My Game Review</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <br><br>
+    <h1>Game Reviews</h1>
+
+    <section id="email-form">
+        <h2>Amazing game reviews straight to your inbox</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label>
+                Email address:
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <input id="submit" type="submit" value="Get Reviews" class="btn">
+        </form>
+    </section>
+    <br>
+
+    <div id="text">
+        <br><br>
+        <h2>What Are Game Reviews?</h2>
+        <p class="para">Game reviews just like films, products and basically everything, have reviews so that people can gain an understanding of what the game is like to those people who have played the game. They have a rating, usually from 0 to 5 and they have a comment stating why it deserves that rating. They can be very useful to those who are unsure about whether they should buy a certain game. You can read the reviews for the game and you can then decide whether you should buy it or not.</p>
+    </div>
+    <br>
+
+    <div id="the-video">
+        <br><br>
+        <h2>Video On Game Reviews</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/iaiaVf7CZuI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <p>(Reference: This video was from <a href="https://www.youtube.com/channel/UCXaNjez7JyJ_JDFEKrC8JmQ" target="_blank">Rogan Chahine | The Gamer Lifestyle's YouTube channel</a>.)</p>
+    </div>
+    <br>
+
+    <div id="your-turn">
+        <h2>My Game Review</h2>
+        <p class="para">Have a go at writing your own game review. Enter the name of the game, give a rating and leave your comments on why you gave this rating.</p>
+        <form id="my-form" action="https://www.freecodecamp.com/email-submit">
+            <br>
+            <label>
+                <p>Enter the name of the game that you are reviewing here: <input type="text" placeholder="Name of the game" required></p>
+            </label>
+
+            <p id="radio_buttons">Give a rating out of 5 for the game:</p>
+            <label for="radio_buttons">
+                <input id="radio_buttons" type="radio" name="radio_buttons">0 <input id="radio_buttons" type="radio" name="radio_buttons">1 <input id="radio_buttons" type="radio" name="radio_buttons">2 <input id="radio_buttons" type="radio" name="radio_buttons">3 <input id="radio_buttons" type="radio" name="radio_buttons">4 <input id="radio_buttons" type="radio" name="radio_buttons" checked>5
+            </label>
+
+            <p>Write your comments on why you chose this rating:</p>
+<textarea placeholder="Your comments here..." required></textarea>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+            <br><br>
+        </form>
+    </div>
+</body>
+</html>
