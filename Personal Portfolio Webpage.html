@@ -4,14 +4,46 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>My Personal Portfolio</title>
+    <title>Personal Portfolio Webpage</title>
 </head>
 
 <style>
     body {
+        font-family: 'Andika New Basic', sans-serif;
         font-size: 24px;
     }
 
+    h1 {
+        text-align: center;
+    }
+
+    #navbar {
+        text-align: right;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    #welcome-section {
+        background-color: palevioletred;
+        text-align: center;
+    }
+
+    #projects {
+        background-color: lightgray;
+    }
+
+    #contact {
+        background-color: lightskyblue;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: goldenrod;
+        text-align: center;
+    }
 </style>
 
 <body>
@@ -19,24 +51,36 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+    <br>
 
     <section id="welcome-section">
         <h1>Hi, my name is Arif</h1>
+        <p>I am studying at university</p>
     </section>
+    <br><br><br>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
     <section id="projects">
-        List of some of my projects
+        <h1>List of some of my projects</h1>
         <ul>
-            <li><a class="project-tile" href="https://github.com/ArifI21/freeCodeCamp_Projects">Link to my GitHub repository of all FCC projects</a></li>
+            <li><a href="https://codepen.io/AI22/full/ZEXXqLQ" target="_blank">Tribute Page</a></li>
+            <br>
+            <li><a href="https://codepen.io/AI22/full/dyVVgRd" target="_blank">Survey Form</a></li>
+            <br>
+            <li><a href="https://codepen.io/AI22/full/qBPPvQG" target="_blank">Product Landing Page</a></li>
+            <br>
+            <li><a href="https://codepen.io/AI22/full/KKXyNZK" target="_blank">Technical Documentation Page</a></li>
+            <br>
+            <li><a class="project-tile" href="https://github.com/ArifI21/freeCodeCamp_Projects" target="_blank">Link to my GitHub repository of all FCC projects</a></li>
         </ul>
 
     </section>
+    <br><br><br>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
     <section id="contact">
-        Contact me<br>
-        <a id="profile-link" href="https://github.com/ArifI21" target="_blank">Link to my GitHub profile</a>
+        <h1>Contact me</h1>
+        <a id="profile-link" href="https://github.com/ArifI21" target="_blank">> Link to my GitHub profile <</a>     
     </section>
+
+    <footer><h3>&copy; Portfolio created by Arif, 2022</h3></footer>
 </body>
 </html>
