@@ -7,32 +7,50 @@
 
 body {
     font-family: 'Andika New Basic', sans-serif;
+    position: relative;
+    background-color: lightgreen;
 }
 
 #page {
-    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
 }
 
 header {
-    width: 100%;
     display: flex;
     position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    max-width: auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 #header-img {
-    height: 160px;
+    height: 150px;
     width: 200px;
 }
 
 ul {
     list-style: none;
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    max-width: auto;
+    width: 100%;
 }
 
 #nav-bar {
-    width: 150%;
-    font-size: 20px;
+    height: 144px;
+    font-size: 30px;
+    background-color: lightcyan;
+    text-align: right;
+    justify-content: space-around;
 }
 
 h1 {
@@ -52,7 +70,7 @@ textarea {
     height: 125px;
     max-width: 400px;
     max-height: 250px;
-    min-width: 500px;
+    min-width: 400px;
     min-height: 125px;
     text-align: center;
 }
@@ -67,78 +85,91 @@ h2 {
 
 #my-form {
     background-color: lightgray;
-    margin-left: 400px;
-    margin-right: 400px;
 }
 
 .para {
-    padding-left: 400px;
-    padding-right: 400px;
+    background-color: orange;
+    text-align: center;
 }
 
-@media (max-width: 480px) {
-    #page {
-        align-items: center;
+@media (max-width: 650px) {
+    .para {
+        width: auto;
+    }
+    #video {
+        width: 468px;
+        height: 263px;
+    }
+    #nav-bar {
+        width: auto;
     }
 }
 
 </style>
 
 <body>
-    <div id="page">
-        <header id="header">
-            <img id="header-img" src="https://dcassetcdn.com/design_img/298864/150189/150189_2663384_298864_image.jpg" alt="Game Reviews Logo"> <!-- This image was from https://www.designcrowd.com/design/2663384 -->
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#text">What Are Game Reviews?</a></li>
-                    <br>
-                    <li><a class="nav-link" href="#the-video">Video On Game Reviews</a></li>
-                    <br>
-                    <li><a class="nav-link" href="#your-turn">My Game Review</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <header id="header">
+        <div>
+            <img id="header-img" src="https://dcassetcdn.com/design_img/199577/90367/90367_2303269_199577_image.png" alt="Game Shop Logo"> <!-- This image was from https://www.designcrowd.com/design/2303269 -->
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#the-video">Video</a></li>
+                <li><a class="nav-link" href="#purchase">Purchase</a></li>
+            </ul>
+        </nav>
+    </header>
     <br><br>
-    <h1>Game Reviews</h1>
+
+    <div id="page">
+    <h1><br>Game Consoles and Reviews</h1>
 
     <section id="email-form">
-        <h2>Amazing game reviews straight to your inbox</h2>
+        <h2>Amazing discounts and offers straight to your inbox</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <label>
                 Email address:
                 <input id="email" name="email" type="email" placeholder="Enter your email" required>
             </label>
-            <input id="submit" type="submit" value="Get Reviews" class="btn">
+            <input id="submit" type="submit" value="Subscribe" class="btn">
         </form>
     </section>
     <br>
 
-    <div id="text">
+    <div id="about">
         <br><br>
-        <h2>What Are Game Reviews?</h2>
-        <p class="para">Game reviews just like films, products and basically everything, have reviews so that people can gain an understanding of what the game is like to those people who have played the game. They have a rating, usually from 0 to 5 and they have a comment stating why it deserves that rating. They can be very useful to those who are unsure about whether they should buy a certain game. You can read the reviews for the game and you can then decide whether you should buy it or not.</p>
+        <h2>About</h2>
+        <p class="para">
+            There are many games consoles that are available. This includes the PlayStation 5, Xbox Series X and the Nintendo Switch as some examples. Game consoles are an alternative to playing games on your PC. With new consoles being released every year, the quality of them is also increased. However it can be tricky deciding which console is best for you, which is why reviews are very useful.
+            <br>Game consoles reviews just like films, products and basically everything, have reviews so that people can gain an understanding of what the console is like to those people who have used the console. They have a rating, usually from 0 to 5 and they have a comment stating why it deserves that rating. They can be very useful to those who are unsure which console is best for you. You can read the reviews for a particular console and you can then decide whether you should buy it or not.
+        </p>
     </div>
     <br>
 
     <div id="the-video">
         <br><br>
-        <h2>Video On Game Reviews</h2>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/iaiaVf7CZuI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <p>(Reference: This video was from <a href="https://www.youtube.com/channel/UCXaNjez7JyJ_JDFEKrC8JmQ" target="_blank">Rogan Chahine | The Gamer Lifestyle's YouTube channel</a>.)</p>
+        <h2>Video</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/tEWEvMHzYSU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <p>(Reference: This video was from <a href="https://www.youtube.com/c/TechsYouCantLiveWithout" target="_blank">Techs You Can't Live Without YouTube channel</a>.)</p>
     </div>
     <br>
 
-    <div id="your-turn">
-        <h2>My Game Review</h2>
-        <p class="para">Have a go at writing your own game review. Enter the name of the game, give a rating and leave your comments on why you gave this rating.</p>
+    <div id="purchase">
+        <h2>Purchase</h2>
+        <p>PlayStation 5: £449 <button>Buy</button></p>
+        <p>Xbox Series X: £449 <button>Buy</button></p>
+        <p>Nintendo Switch: £309 <button>Buy</button></p>
+
+        <br>
+        <p class="para">Have a go at writing your own review for the console. Enter the name of the console, give a rating and leave your comments on why you gave this rating.</p>
         <form id="my-form" action="https://www.freecodecamp.com/email-submit">
             <br>
             <label>
-                <p>Enter the name of the game that you are reviewing here: <input type="text" placeholder="Name of the game" required></p>
+                <p>Enter the name of the console that you are reviewing here: <input type="text" placeholder="Name of the console" required></p>
             </label>
 
-            <p id="radio_buttons">Give a rating out of 5 for the game:</p>
+            <p id="radio_buttons">Give a rating out of 5 for the console:</p>
             <label for="radio_buttons">
                 <input id="radio_buttons" type="radio" name="radio_buttons">0 <input id="radio_buttons" type="radio" name="radio_buttons">1 <input id="radio_buttons" type="radio" name="radio_buttons">2 <input id="radio_buttons" type="radio" name="radio_buttons">3 <input id="radio_buttons" type="radio" name="radio_buttons">4 <input id="radio_buttons" type="radio" name="radio_buttons" checked>5
             </label>
@@ -149,6 +180,8 @@ h2 {
             <button id="submit" type="submit">Submit</button>
             <br><br>
         </form>
+    </div>
+    <footer><h3>Copyright&copy; 2022, TheGameShop</h3></footer>
     </div>
 </body>
 </html>
