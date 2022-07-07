@@ -5,106 +5,108 @@
 
 <style>
 
-body {
-    font-family: 'Andika New Basic', sans-serif;
-    position: relative;
-    background-color: lightgreen;
-}
-
-#page {
-    margin: 0 auto;
-    max-width: 1000px;
-    width: 100%;
-}
-
-header {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: space-around;
-    top: 0;
-    max-width: auto;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-#header-img {
-    height: 150px;
-    width: 200px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding-right: 10px;
-    max-width: auto;
-    width: 100%;
-}
-
-#nav-bar {
-    height: 144px;
-    font-size: 30px;
-    background-color: lightcyan;
-    text-align: right;
-    justify-content: space-around;
-}
-
-h1 {
-    padding-bottom: 50px;
-    text-align: center;
-    color: red;
-    font-size: 50px;
-}
-
-#email-form {
-    text-align: center;
-    margin-top: 50px;
-}
-
-textarea {
-    width: 500px;
-    height: 125px;
-    max-width: 400px;
-    max-height: 250px;
-    min-width: 400px;
-    min-height: 125px;
-    text-align: center;
-}
-
-div {
-    text-align: center;
-}
-
-h2 {
-    text-decoration: underline;
-}
-
-#my-form {
-    background-color: lightgray;
-}
-
-.para {
-    background-color: orange;
-    text-align: center;
-}
-
-@media (max-width: 650px) {
-    .para {
-        width: auto;
+    body {
+        font-family: 'Andika New Basic', sans-serif;
+        position: relative;
     }
-    #video {
-        width: 468px;
-        height: 263px;
+
+    #page {
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 100%;
     }
+
+    header {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #header-img {
+        height: 150px;
+        width: 200px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding-right: 10px;
+        width: 100%;
+    }
+
     #nav-bar {
-        width: auto;
+        height: 144px;
+        font-size: 30px;
+        width: 100%;
     }
-}
 
+    h1 {
+        padding-bottom: 50px;
+        text-align: center;
+        color: red;
+        font-size: 50px;
+    }
+
+    #email-form {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    textarea {
+        width: 500px;
+        height: 125px;
+        max-width: 400px;
+        max-height: 250px;
+        min-width: 400px;
+        min-height: 125px;
+        text-align: center;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    h2, h3 {
+        text-decoration: underline;
+    }
+
+    #my-form {
+        background-color: lightgray;
+    }
+
+    .para {
+        text-align: center;
+    }
+
+    @media (max-width: 785px) {
+        .para {
+            width: auto;
+        }
+
+        #video {
+            width: 468px;
+            height: 263px;
+        }
+
+        header, #nav-bar {
+            width: 100%;
+            flex-direction: column;
+            font-size: 20px;
+            padding-right: 100px;
+        }
+
+        #page {
+            margin-top: 150px;
+        }
+    }
 </style>
 
 <body>
@@ -123,65 +125,69 @@ h2 {
     <br><br>
 
     <div id="page">
-    <h1><br>Game Consoles and Reviews</h1>
+        <h1><br>Game Consoles and Reviews</h1>
 
-    <section id="email-form">
-        <h2>Amazing discounts and offers straight to your inbox</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <label>
-                Email address:
-                <input id="email" name="email" type="email" placeholder="Enter your email" required>
-            </label>
-            <input id="submit" type="submit" value="Subscribe" class="btn">
-        </form>
-    </section>
-    <br>
-
-    <div id="about">
-        <br><br>
-        <h2>About</h2>
-        <p class="para">
-            There are many games consoles that are available. This includes the PlayStation 5, Xbox Series X and the Nintendo Switch as some examples. Game consoles are an alternative to playing games on your PC. With new consoles being released every year, the quality of them is also increased. However it can be tricky deciding which console is best for you, which is why reviews are very useful.
-            <br>Game consoles reviews just like films, products and basically everything, have reviews so that people can gain an understanding of what the console is like to those people who have used the console. They have a rating, usually from 0 to 5 and they have a comment stating why it deserves that rating. They can be very useful to those who are unsure which console is best for you. You can read the reviews for a particular console and you can then decide whether you should buy it or not.
-        </p>
-    </div>
-    <br>
-
-    <div id="the-video">
-        <br><br>
-        <h2>Video</h2>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/tEWEvMHzYSU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <p>(Reference: This video was from <a href="https://www.youtube.com/c/TechsYouCantLiveWithout" target="_blank">Techs You Can't Live Without YouTube channel</a>.)</p>
-    </div>
-    <br>
-
-    <div id="purchase">
-        <h2>Purchase</h2>
-        <p>PlayStation 5: £449 <button>Buy</button></p>
-        <p>Xbox Series X: £449 <button>Buy</button></p>
-        <p>Nintendo Switch: £309 <button>Buy</button></p>
-
+        <section id="email-form">
+            <h3>Amazing discounts and offers straight to your inbox</h3>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label>
+                    Email address:
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                </label>
+                <input id="submit" type="submit" value="Subscribe" class="btn">
+            </form>
+        </section>
         <br>
-        <p class="para">Have a go at writing your own review for the console. Enter the name of the console, give a rating and leave your comments on why you gave this rating.</p>
-        <form id="my-form" action="https://www.freecodecamp.com/email-submit">
+
+        <div id="about">
+            <br><br><br>
+            <h2>About</h2>
+            <p class="para">
+                There are many games consoles that are available. This includes the PlayStation 5, Xbox Series X and the Nintendo Switch as some examples. Game consoles are an alternative to playing games on your PC. With new consoles being released every year, the quality of them is also increased. However it can be tricky deciding which console is best for you, which is why reviews are very useful.
+                <br>Game consoles reviews just like films, products and basically everything, have reviews so that people can gain an understanding of what the console is like to those people who have used the console. They have a rating, usually from 0 to 5 and they have a comment stating why it deserves that rating. They can be very useful to those who are unsure which console is best for you. You can read the reviews for a particular console and you can then decide whether you should buy it or not.
+            </p>
+        </div>
+        <br>
+
+        <div id="the-video">
+            <br><br><br>
+            <h2>Video</h2>
+            <p>A video talking about the top 5 best gaming consoles in 2022.</p><br>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/tEWEvMHzYSU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <p>(Reference: This video was from <a href="https://www.youtube.com/c/TechsYouCantLiveWithout" target="_blank">Techs You Can't Live Without YouTube channel</a>.)</p>
+        </div>
+        <br>
+
+        <div id="purchase">
+            <br><br><br>
+            <h2>Purchase</h2>
+            <img height="290" width="465" src="https://www.silive.com/resizer/ejPBAcQa-4iy91puHDItL0ZUZ2U=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/J5NGOFCXYBGRJKQQ6MLNNCCJMI.JPG" alt="Xbox and PS5 image"> <!-- This image was from https://www.silive.com/news/2020/11/missed-out-on-ps5-xbox-series-x-on-black-friday-4-tips-to-get-one-before-christmas.html -->
+            <p>Xbox Series X: £449 <button>Buy</button></p>
+            <p>PlayStation 5: £449 <button>Buy</button></p>
+            <img height="242" width="457" src="https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/not_approved_1/NSwitch_ws_NintendoSwitch.png" alt="Nintendo Switch image"> <!-- This image was from https://www.nintendo.co.uk/Nintendo-Switch-Family/Which-Nintendo-Switch-is-right-for-you-/Which-Nintendo-Switch-is-right-for-you-1596110.html -->
+            <p>Nintendo Switch: £309 <button>Buy</button></p>
+
             <br>
-            <label>
-                <p>Enter the name of the console that you are reviewing here: <input type="text" placeholder="Name of the console" required></p>
-            </label>
+            <p class="para">Have a go at writing your own review for the console. Enter the name of the console, give a rating and leave your comments on why you gave this rating.</p>
+            <form id="my-form" action="https://www.freecodecamp.com/email-submit">
+                <br>
+                <label>
+                    <p>Enter the name of the console that you are reviewing here: <input type="text" placeholder="Name of the console" required></p>
+                </label>
 
-            <p id="radio_buttons">Give a rating out of 5 for the console:</p>
-            <label for="radio_buttons">
-                <input id="radio_buttons" type="radio" name="radio_buttons">0 <input id="radio_buttons" type="radio" name="radio_buttons">1 <input id="radio_buttons" type="radio" name="radio_buttons">2 <input id="radio_buttons" type="radio" name="radio_buttons">3 <input id="radio_buttons" type="radio" name="radio_buttons">4 <input id="radio_buttons" type="radio" name="radio_buttons" checked>5
-            </label>
+                <p id="radio_buttons">Give a rating out of 5 for the console:</p>
+                <label for="radio_buttons">
+                    <input id="radio_buttons" type="radio" name="radio_buttons">0 <input id="radio_buttons" type="radio" name="radio_buttons">1 <input id="radio_buttons" type="radio" name="radio_buttons">2 <input id="radio_buttons" type="radio" name="radio_buttons">3 <input id="radio_buttons" type="radio" name="radio_buttons">4 <input id="radio_buttons" type="radio" name="radio_buttons" checked>5
+                </label>
 
-            <p>Write your comments on why you chose this rating:</p>
+                <p>Write your comments on why you chose this rating:</p>
 <textarea placeholder="Your comments here..." required></textarea>
-            <br>
-            <button id="submit" type="submit">Submit</button>
-            <br><br>
-        </form>
-    </div>
-    <footer><h3>Copyright&copy; 2022, TheGameShop</h3></footer>
+                <br>
+                <button id="submit" type="submit">Submit</button>
+                <br><br>
+            </form>
+        </div>
+        <footer><h3>Copyright&copy; 2022, TheGameShop</h3></footer>
     </div>
 </body>
 </html>
