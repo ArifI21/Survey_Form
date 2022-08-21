@@ -4,51 +4,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet" type="text/css">
 
 <style>
-
-body {
-    font-family: 'Andika New Basic', sans-serif;
-}
-
-#navbar {
-    position: fixed;
-    width: 20%;
-}
-
-#main-doc {
-    position: absolute;
-    width: 70%;
-    margin-left: 25%;
-    padding-right: 20px;
-}
-
-#navbar a {
-    font-size: 16px;
-}
-
-li {
-    list-style: none;
-    text-align: left;
-    margin-bottom: 1em;
-}
-
-header {
-    font-size: 20px;
-}
-
-code {
-    background-color: lightgray;
-}
-
-@media (max-width: 800px) {
-    #navbar a, #RLTD {
-        font-size: 14px;
+    body {
+        font-family: 'Andika New Basic', sans-serif;
     }
+
+    #navbar {
+        position: fixed;
+        width: 20%;
+    }
+
     #main-doc {
-        padding: 0px;
+        position: absolute;
+        width: 70%;
+        margin-left: 25%;
+        padding-right: 20px;
     }
-}
 
+    #navbar a {
+        font-size: 16px;
+    }
+
+    li {
+        list-style: none;
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    .controls {
+        background-color: lightgray;
+    }
+
+    code {
+        font-size: 16px;
+    }
+
+    @media (max-width: 650px) {
+        #navbar a, #RLTD {
+            font-size: 14px;
+        }
+
+        #main-doc {
+            padding: 0px;
+        }
+    }
 </style>
+
+<head>
+    <title>Technical Documentation Page</title>
+</head>
 
 <body>
     <div>
@@ -69,7 +76,6 @@ code {
             <p>Rocket League is a vehicular soccer video game developed and published by Psyonix. Described as "soccer, but with rocket-powered cars," Rocket League involves two teams that use rocket-powered vehicles to hit a ball into their opponent's goal and score points over the course of a match. The game includes single-player and multiplayer modes that can be played both locally and online, including cross-platform play between the PlayStation 4 and Microsoft Windows versions, as well as cross-play between Xbox One, Switch, and Windows versions.</p>
 
             <p>Rocket League is rated E for Everyone. Rating Summary: This is an action-racing game in which players drive futuristic cars to play games of soccer. Players attempt to score the most goals as they compete in a variety of game modes (e.g. Casual, Competitive, Exhibition, Training).</p>
-            <code></code> <!-- code tags are not required in my technical documentation so these blank code tags are here just to fulfill the user story -->
         </section>
         <br>
 
@@ -78,9 +84,16 @@ code {
             <p>Players control a rocket-powered car and use it to hit a ball that is much larger than the cars towards the other goal to score points. Rocket League resembles a soccer game with elements of a demolition derby. Players' cars have the ability to jump to hit the ball while in midair. The players can also pick up speed boosts by passing their cars over marked spaces on the field, enabling them to quickly cross the field, use the added momentum to hit the ball, or ram into another player's car to destroy it. (Destroyed cars respawn moments later.) Matches are typically five minutes long with a sudden death overtime if the game is tied at that point.</p>
 
             <p>Each team starts on opposite sides of the field, as either the Blue or Orange team. When the timer begins, players race to be the first to hit the ball with their car. Once the ball is in play, the clock winds down until a team scores by hitting the ball into the opposing team’s goal, at which point players return to their starting positions and repeat that process until time runs out. The team with the most goals at the end of regulation wins. If there is a tie, the teams play periods of overtime until a winner is determined.</p>
-            <code>Playstation: X to jump, O to boost, SQUARE to powerslide, TRIANGLE to change camera, left stick to turn or change direction, right stick to look around, L1 to look at the scoreboard, L2 to brake/reverse and R2 to accelerate.</code>
-            <br>
-            <code>XBOX: A to jump, B to boost, X to powerslide, Y to change camera, left stick to turn or change direction, right stick to look around, LB to look at the scoreboard, LT to brake/reverse and RT to accelerate.</code>
+            <div class="controls">
+                <code>Default controls of Rocket League</code>
+                <br><br>
+                <code>PlayStation: X to jump, O to boost, ◻ to powerslide, △ to change camera, left stick to turn or change direction, right stick to look around, L1 to look at the scoreboard, L2 to brake/reverse and R2 to accelerate.</code>
+                <br><br>
+                <code>XBOX: A to jump, B to boost, X to powerslide, Y to change camera, left stick to turn or change direction, right stick to look around, LB to look at the scoreboard, LT to brake/reverse and RT to accelerate.</code>
+                <br><br>
+                <code>Note: All controls can be modified to the user's preferences in the Settings menu.</code>
+                <code></code>
+            </div>
         </section>
         <br>
 
@@ -89,16 +102,14 @@ code {
             <p>Competitive Ranks in Rocket League start at Bronze and continue to Sliver, Gold, and beyond. Each Rank is divided into Divisions. There are four Divisions in each Rank. For example, Gold III Division II means that you are three divisions away from reaching the next rank, Platinum I. Champion I Division IV means that you are in the fourth Division of Champion I. As you win Competitive Matches you will be promoted to higher Divisions and Ranks. Losing more matches than you win will demote you to lower Divisions and Ranks. </p>
 
             <p>Both Grand Champion and Supersonic Legend have their own Season Rewards at the end of each Season, as well as Rank-specific Titles. MMR is displayed in the Playlist menu once you hit Grand Champion I. Good luck climbing to the top of the Rocket League mountain!</p>
-            <code></code>
         </section>
         <br>
 
         <section class="main-section" id="Tournaments_and_Esports">
             <header>Tournaments and Esports</header>
-            <p>Each year of Rocket League Esports culminates in the Rocket League Championship Series (RLCS). The best teams from around the world (Europe, North America, Oceania, South America, Middle East and Asia) compete for big cash prize and their shot at becoming World Champions. To reach that point, teams have to prove themselves through RLCS via qualifiers, regionals and majors in their local regions</p>
+            <p>Each year of Rocket League Esports culminates in the Rocket League Championship Series (RLCS). The best teams from around the world (Europe, North America, Oceania, South America, Middle East and Asia) compete for big cash prize and their shot at becoming World Champions. To reach that point, teams have to prove themselves through RLCS via qualifiers, regionals and majors in their local regions.</p>
 
-            <p>During the RLCS, there are 3 splits; fall, winter and spring and teams take part to earn points and become champions of their region and the world. The fall split has been completed as of December 2021 with the winter split to begin in January 2022.</p>
-            <code></code>
+            <p>During the RLCS, there are 3 splits; fall, winter and spring and teams take part to earn points and become champions of their region and the world. The 3 split have been completed as of August 2022 with the World Championship to begin very soon.</p>
         </section>
         <br>
 
@@ -106,11 +117,11 @@ code {
             <header>Why you should play Rocket League</header>
             <p>There are many reasons why you should play Rocket League:</p>
 
-            <li>> Cross-platform progression. Share your rocket league inventory, competitive rank, and rocket pass tier on any connected platform!</li>
-            <li>> In-game events and limited time modes! From haunted hallows to frosty fest, enjoy limited time events that feature festive in-game items that can be unlocked by playing online! Keep on the lookout for limited time modes and arenas.</li>
-            <li>> Item shop and blueprints. Make your car your own with nearly endless customization possibilities! Get in-game items for completing challenges, browse the item shop, or build blueprints for premium content for your car.</li>
-            <li>> There is also a mobile version of Rocket League called Rocket League Sideswipe, the same concept as Rocket League but 2D and on your phone!</li>
-            <li>> And finally it's very fun to play!</li>
+            <li> -> Cross-platform progression. Share your rocket league inventory, competitive rank, and rocket pass tier on any connected platform!</li>
+            <li> -> In-game events and limited time modes! From haunted hallows to frosty fest, enjoy limited time events that feature festive in-game items that can be unlocked by playing online! Keep on the lookout for limited time modes and arenas.</li>
+            <li> -> Item shop and blueprints. Make your car your own with nearly endless customization possibilities! Get in-game items for completing challenges, browse the item shop, or build blueprints for premium content for your car.</li>
+            <li> -> There is also a mobile version of Rocket League called Rocket League Sideswipe, the same concept as Rocket League but 2D and on your phone!</li>
+            <li> -> And finally it's very fun to play!</li>
         </section>
         <br>
 

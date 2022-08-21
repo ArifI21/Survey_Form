@@ -8,79 +8,173 @@
 </head>
 
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
 
-body {
-    font-family: 'Andika New Basic', sans-serif;
-    font-size: 24px;
-}
+    body {
+        font-family: 'Andika New Basic', sans-serif;
+        font-size: 24px;
+    }
 
-h1 {
-    text-align: center;
-}
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
 
-#navbar {
-    text-align: right;
-}
+    #navbar {
+        background-color: lightgreen;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        top: 0;
+        width: 100%;
+        position: fixed;
+    }
 
-section {
-    padding: 5px;
-}
+    #navi, #navi1, #navi2 {
+        display: flex;
+        margin-right: 30px;
+    }
 
-#welcome-section {
-    background-color: palevioletred;
-    text-align: center;
-}
+    ul {
+        list-style: none;
+    }
 
-#projects {
-    background-color: lightgray;
-}
+    div {
+        background-color: cadetblue;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
 
-#contact {
-    background-color: lightskyblue;
-    padding-bottom: 25px;
-    text-align: center;
-}
+    a {
+        color: darkred;
+    }
 
-footer {
-    background-color: goldenrod;
-    text-align: center;
-}
+    section {
+        padding: 5px;
+    }
 
+    #welcome-section {
+        background-color: indianred;
+        text-align: center;
+        height: 98vh;
+    }
+
+    #projects {
+        background-color: dodgerblue;
+    }
+
+    .project_image {
+        width: 750px;
+    }
+
+    #contact {
+        background-color: lightskyblue;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: goldenrod;
+        text-align: center;
+    }
+
+    @media (max-width: 1100px) {
+        div {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .project_image {
+            width: 650px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        div {
+            max-width: 450px;
+            margin: auto;
+        }
+
+        .project_image {
+            width: 400px;
+        }
+    }
 </style>
+
+<head>
+    <title>Personal Portfolio Webpage</title>
+</head>
 
 <body>
     <nav id="navbar">
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a id="navi" href="#projects">Projects</a>
+        <a id="navi2" href="#contact">Contact</a>
+        <br><br>
     </nav>
-    <br>
 
     <section id="welcome-section">
+        <br>
         <h1>Hi, my name is Arif</h1>
-        <p>I am studying at university</p>
+        <p>I have graduated from university</p>
+        <br>
     </section>
-    <br><br><br>
 
     <section id="projects">
-        <h1>List of some of my projects</h1>
+        <br>
+        <h1>List of my projects</h1>
         <ul>
-            <li><a href="https://codepen.io/AI22/full/ZEXXqLQ" target="_blank">Tribute Page</a></li>
+            <div class="tribute_page">
+                <img class="project_image" src="https://ichef.bbci.co.uk/news/320/cpsprodpb/9ABC/production/_125921693_mandela.jpg" alt="Nelson Mandela image"> <!-- This image was from https://www.bbc.co.uk/newsround/62176590 -->
+                <br>
+                <a href="https://codepen.io/AI22/full/ZEXXqLQ" target="_blank">Tribute Page</a>
+            </div>
             <br>
-            <li><a href="https://codepen.io/AI22/full/dyVVgRd" target="_blank">Survey Form</a></li>
-            <br>
-            <li><a href="https://codepen.io/AI22/full/qBPPvQG" target="_blank">Product Landing Page</a></li>
-            <br>
-            <li><a href="https://codepen.io/AI22/full/KKXyNZK" target="_blank">Technical Documentation Page</a></li>
-            <br>
-            <li><a class="project-tile" href="https://github.com/ArifI21/freeCodeCamp_Projects" target="_blank">Link to my GitHub repository of all FCC projects</a></li>
-        </ul>
 
+            <div class="survey_form">
+                <img class="project_image" src="https://pbs.twimg.com/media/DbncULZXUAAYgEZ?format=jpg&name=small" alt="Pie chart question"> <!-- This image was from https://mobile.twitter.com/SurveysGaming/status/989064091787460609?cxt=HHwWgoCwsaOj7rkbAAAA -->
+                <br>
+                <a href="https://codepen.io/AI22/full/dyVVgRd" target="_blank">Survey Form</a>
+            </div>
+            <br>
+
+            <div class="product_page">
+                <img class="project_image" src="https://www.silive.com/resizer/ejPBAcQa-4iy91puHDItL0ZUZ2U=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/J5NGOFCXYBGRJKQQ6MLNNCCJMI.JPG" alt="Xbox and PS5 image"> <!-- This image was from https://www.silive.com/news/2020/11/missed-out-on-ps5-xbox-series-x-on-black-friday-4-tips-to-get-one-before-christmas.html -->
+                <br>
+                <a href="https://codepen.io/AI22/full/qBPPvQG" target="_blank">Product Landing Page</a>
+            </div>
+            <br>
+
+            <div class="techdoc_page">
+                <img class="project_image" src="https://image.pngaaa.com/797/3946797-middle.png" alt="Rocket League logo"> <!-- This image was from https://www.pngaaa.com/detail/3946797 -->
+                <br>
+                <a href="https://codepen.io/AI22/full/KKXyNZK" target="_blank">Technical Documentation Page</a>
+            </div>
+            <br>
+
+            <div class="project-tile">
+                <img class="project_image" src="https://img.favpng.com/25/14/16/github-computer-icons-repository-version-control-png-favpng-6q65h1PVLVk9iCk13b7M9L5Ad.jpg" alt="GitHub repo icon"> <!-- This image was from https://favpng.com/png_view/github-github-repository-version-control-png/4hNEVMX1 -->
+                <br>
+                <a href="https://github.com/ArifI21/freeCodeCamp_Projects" target="_blank">FCC projects GitHub repository</a>
+            </div>
+        </ul>
+        <br>
     </section>
-    <br><br><br>
 
     <section id="contact">
+        <br>
         <h1>Contact me</h1>
-        <a id="profile-link" href="https://github.com/ArifI21" target="_blank">> Link to my GitHub profile <</a>     
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="200"> <!-- This image was from https://github.com/logos -->
+        <br>
+        -> <a id="profile-link" href="https://github.com/ArifI21" target="_blank">Link to my GitHub profile</a>
+        <br><br>
+
+        <img src="https://d33wubrfki0l68.cloudfront.net/bbfa33a202e8612d49b6c1ed05c1fdd8e4001566/bbdd1/img/fcc_secondary_small.svg" height="150"> <!-- This image was from https://design-style-guide.freecodecamp.org/ -->
+        <br>
+        -> <a href="https://www.freecodecamp.org/ArifI22" target="_blank">Link to my freeCodeCamp profile</a>
+        <br>
     </section>
 
     <footer><h3>&copy; Portfolio created by Arif, 2022</h3></footer>
